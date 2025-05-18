@@ -1,34 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useLocation } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import About from './sections/About'
+import Projects from './sections/Projects'
+import Blogs from './sections/Blogs'
+import Contact from './sections/Contact'
+import BlogPage from './blogs/BlogPage'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const location = useLocation()
+
+  // If on a blog page, don't show full site layout
+  if (location.pathname.startsWith('/blogs/')) {
+    return <BlogPage />
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="scaled-wrapper">
+      <Navbar />
+      <main>
+        <div id="about" className="anchor-wrapper">
+          <About />
+        </div>
+        <div id="projects" className="anchor-wrapper">
+          <Projects />
+        </div>
+        <div id="blogs" className="anchor-wrapper">
+          <Blogs />
+        </div>
+        <div id="contact" className="anchor-wrapper">
+          <Contact />
+        </div>
+      </main>
+    </div>
   )
 }
 
