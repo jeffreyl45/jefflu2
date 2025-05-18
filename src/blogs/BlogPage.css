@@ -1,0 +1,46 @@
+.blog-wrapper {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+  padding: 2rem;
+}
+
+/* Logo positioning */
+.blog-logo-link {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1rem;
+  transition: transform 0.2s ease;
+}
+
+.blog-logo-link:hover {
+  transform: scale(1.05);
+}
+
+/* Blog content */
+.blog-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.blog-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.blog-date {
+  color: gray;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.blog-article p {
+  font-size: 1.3rem;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
