@@ -1,37 +1,15 @@
 import { useState } from 'react'
 import './Blogs.css'
 import { Link } from 'react-router-dom'
+const BASE = import.meta.env.BASE_URL;
+
 
 const blogs = [
   {
     title: 'How I Built This Site',
     description: 'A deep dive into the design and development of my portfolio site.',
-    image: '/blog1.jpg',
+    image: `${BASE}icon.png`, 
     link: '/blogs/blog1'
-  },
-  {
-    title: 'Intro to Language Parsing',
-    description: 'What I learned building a tool that parses and teaches grammar.',
-    image: '/blog2.jpg',
-    link: '/blogs/language-parser'
-  },
-  {
-    title: 'Machine Learning Project Tips',
-    description: 'Some advice from working on ML projects at school and co-ops.',
-    image: '/blog3.jpg',
-    link: '/blogs/ml-project-tips'
-  },
-  {
-    title: 'Extra Blog 1',
-    description: 'An insightful read on design systems.',
-    image: '/blog4.jpg',
-    link: '/blogs/design-systems'
-  },
-  {
-    title: 'Extra Blog 2',
-    description: 'Thoughts on effective study habits.',
-    image: '/blog5.jpg',
-    link: '/blogs/study-habits'
   }
 ]
 

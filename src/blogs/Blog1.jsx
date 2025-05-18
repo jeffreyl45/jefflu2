@@ -1,7 +1,9 @@
 import HomePlateLogo from '../components/HomePlateLogo'
 import './BlogPage.css'
+const BASE = import.meta.env.BASE_URL
 
-export default function BlogPage() {
+
+export default function Blog1() {
   return (
     <div className="blog-wrapper">
       <a href="/" className="logo-homeplate blog-logo-link">
@@ -11,6 +13,12 @@ export default function BlogPage() {
       <main className="blog-content">
         <h1 className="blog-title">How I Built This Site</h1>
         <p className="blog-date">Published: May 16, 2025</p>
+
+        <img
+          src={`${BASE}icon.png`}
+          alt="Blog banner"
+          className="blog-header-image"
+        />
 
         <article className="blog-article">
           <p>

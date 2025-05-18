@@ -38,6 +38,22 @@
   margin-bottom: 2rem;
 }
 
+/* Blog header image */
+.blog-header-image {
+  width: 50%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: width 0.8s ease;
+}
+
+.blog-header-image:hover {
+    width: 60%;
+}
+
+/* Article styling */
 .blog-article p {
   font-size: 1.3rem;
   line-height: 2;

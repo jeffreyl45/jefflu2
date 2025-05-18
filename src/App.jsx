@@ -4,12 +4,10 @@ import About from './sections/About'
 import Projects from './sections/Projects'
 import Blogs from './sections/Blogs'
 import Contact from './sections/Contact'
+import Blog1 from './blogs/Blog1'
 
-import BlogHowIBuiltThis from './blogs/BlogHowIBuiltThis'
-import BlogLanguageParser from './blogs/BlogLanguageParser'
-import BlogMLTips from './blogs/BlogMLTips'
-import BlogDesignSystems from './blogs/BlogDesignSystems'
-import BlogStudyHabits from './blogs/BlogStudyHabits'
+
+
 
 import './App.css'
 
@@ -19,7 +17,7 @@ function App() {
   return (
     <Routes>
       {/* Blog Pages */}
-      <Route path="/blogs/blog1" element={<BlogHowIBuiltThis />} />
+      <Route path="/blogs/blog1" element={<Blog1 />} />
       
       {/*
         <Route path="/blogs/language-parser" element={<BlogLanguageParser />} />
