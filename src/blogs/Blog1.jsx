@@ -1,12 +1,18 @@
+import { useEffect } from 'react'
 import HomePlateLogo from '../components/HomePlateLogo'
 import './BlogPage.css'
 const BASE = import.meta.env.BASE_URL
 
-
 export default function Blog1() {
+  // Scroll to top on mount
+  useEffect(() => {
+  window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div className="blog-wrapper">
-      <a href="/" className="logo-homeplate blog-logo-link">
+      <a href={BASE} className="logo-homeplate blog-logo-link">
         <HomePlateLogo />
       </a>
 
@@ -23,7 +29,7 @@ export default function Blog1() {
         <article className="blog-article">
           <p>
             Hello internet! Welcome to my personal portfolio 2.0 made with <strong>React + Vite</strong>!
-            If you've come from my <a href = "https://jeffreyl45.github.io/jefflu/">old webpage</a> then you
+            If you've come from my <a href="https://jeffreyl45.github.io/jefflu/">old webpage</a> then you
             probably know who I am, but in case you're new, my name is Jeffrey Lu and I just finished my third year of Computer
             Science at McMaster University. I'm currently taking a professional experience year working at Scotiabank as a Software Engineer 
             starting from May 2025. My main interests lie in Software Development and Machine Learning/AI.
