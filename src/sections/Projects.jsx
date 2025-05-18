@@ -4,27 +4,13 @@ import './Projects.css'
 const projects = [
    {
     title: 'Personal Portfolio Website',
-    description: (
-    <>
-      Old Personal Portfolio Website Hosted {' '}
-      <a href="https://jeffreyl45.github.io/jefflu/" id="personal Portfolio website" target="_blank" rel="noopener noreferrer">
-        here
-      </a>{'.'}
-    </>
-    ),
+    description: 'New Personal Portfolio website made using React Vite',
     image: '/icon.png',
     link: 'https://github.com/jeffreyl45/jefflu2'
   },  
   {
     title: 'Old Personal Portfolio Website',
-    description: (
-    <>
-      Old Personal Portfolio Website Hosted {' '}
-      <a href="https://jeffreyl45.github.io/jefflu/" id="personal Portfolio website" target="_blank" rel="noopener noreferrer">
-        here
-      </a>{'.'}
-    </>
-    ),
+    description: "My old personal portfolio website made using HTML, CSS, JS",
     image: '/personalPortfolio.png',
     link: 'https://github.com/jeffreyl45/jefflu'
   },
@@ -48,15 +34,7 @@ const projects = [
   },
   {
     title: 'TLDR Roger Ebert Reviews',
-    description: (
-    <>
-      A machine learning Python project that will summarize a{' '}
-      <a href="https://www.rogerebert.com/" id="ebert" target="_blank" rel="noopener noreferrer">
-        Roger Ebert
-      </a>{' '}
-      review in 4 lines!
-    </>
-    ),
+    description: "A machine learning project that summarizes an article from Roger Ebert's Website",
     image: '/roger.jpg',
     link: 'https://github.com/jeffreyl45/TLDR-Roger-Ebert-Reviews'
   },

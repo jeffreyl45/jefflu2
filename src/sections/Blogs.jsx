@@ -7,7 +7,7 @@ const blogs = [
     title: 'How I Built This Site',
     description: 'A deep dive into the design and development of my portfolio site.',
     image: '/blog1.jpg',
-    link: '/blogs/blogpage'
+    link: '/blogs/blog1'
   },
   {
     title: 'Intro to Language Parsing',
