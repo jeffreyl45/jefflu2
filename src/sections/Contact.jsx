@@ -12,7 +12,7 @@ export default function Contact() {
         <a href="mailto:jefflu288@gmail.com" className="contact-icon" aria-label="Email">
           <FaEnvelope />
         </a>
-        <a href="https://github.com/jeffreylu7" target="_blank" rel="noopener noreferrer" className="contact-icon" aria-label="GitHub">
+        <a href="https://github.com/jeffreyl45" target="_blank" rel="noopener noreferrer" className="contact-icon" aria-label="GitHub">
           <FaGithub />
         </a>
         <a href="https://linkedin.com/in/jeffrey-lu-2b5367204" target="_blank" rel="noopener noreferrer" className="contact-icon" aria-label="LinkedIn">
