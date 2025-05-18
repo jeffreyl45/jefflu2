@@ -1,0 +1,247 @@
+:root {
+  --sky: #38bdf8;
+  --dark: #0f172a;
+  --light: #f9f9f9;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.about-container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 2rem 4rem;
+  margin: 0 auto;
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.about-main-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  color: var(--dark);
+  position: relative;
+  display: inline-block;
+}
+
+.about-main-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 4px;
+  background-color: var(--sky);
+  border-radius: 2px;
+}
+
+.about-greeting {
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  color: var(--dark);
+  padding: 1rem;
+}
+
+/* Profile image (no flip) */
+.profile-image-wrapper {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--sky);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.profile-image-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* About text */
+.about-text p {
+  font-size: 1.8rem;
+  line-height: 2.1;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+  color: #333;
+}
+
+/* Buttons */
+.about-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 12px;
+  background-color: var(--sky);
+  color: white;
+  text-decoration: none;
+  border: 2px solid var(--sky);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: var(--sky);
+  transform: scale(1.05);
+}
+
+/* Section headers */
+.about-section {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.about-section h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.about-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background-color: var(--sky);
+  border-radius: 2px;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skills-grid span {
+  background-color: var(--sky);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Flip Cards for Experience and Education */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.flip-card {
+  width: 380px;
+  height: 240px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border: 2px solid var(--sky);
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.flip-card-front h3 {
+  font-size: 1.6rem;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.flip-card-front p,
+.flip-card-back p {
+  font-size: 1.3rem;
+  color: #444;
+  text-align: center;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-text p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+
+  .profile-image-wrapper {
+    width: 280px;
+    height: 280px;
+  }
+
+  .about-greeting {
+    font-size: 2.2rem;
+  }
+
+  .about-main-title {
+    font-size: 3.2rem;
+  }
+}
+
+:target::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-top: -120px;
+}
