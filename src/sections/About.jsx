@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './About.css'
+const BASE = import.meta.env.BASE_URL
 
 export default function About() {
   const [flippedCards, setFlippedCards] = useState({})
@@ -46,7 +47,7 @@ export default function About() {
       <h1 className="about-main-title">About Me</h1>
 
       <div className="profile-image-wrapper">
-        <img src="/jeffrey.jpeg" alt="Jeffrey" className="profile-image" />
+        <img src={`${BASE}jeffrey.jpeg`} alt="Jeffrey" className="profile-image" />
       </div>
 
       <h2 className="about-greeting">Hi, I'm Jeffrey 👋</h2>
