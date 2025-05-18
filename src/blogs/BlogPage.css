@@ -60,3 +60,12 @@
   margin-bottom: 1.5rem;
   text-align: left;
 }
+
+@media (max-width: 850px) {
+    .blog-article p {
+    font-size: 0.8rem;
+    line-height: 2;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+}
