@@ -11,8 +11,8 @@ export default function Blog1() {
       </a>
 
       <main className="blog-content">
-        <h1 className="blog-title">How I Built This Site</h1>
-        <p className="blog-date">Published: May 16, 2025</p>
+        <h1 className="blog-title">Hello World 2.0!</h1>
+        <p className="blog-date">Published: May 17, 2025</p>
 
         <img
           src={`${BASE}icon.png`}

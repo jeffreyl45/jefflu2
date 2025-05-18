@@ -4,7 +4,7 @@
   --light: #f9f9f9;
 }
 
-/* Blogs Section Wrapper */
+/* Section Wrapper */
 .blogs-section {
   max-width: 1400px;
   margin: 0 auto;
@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-/* Title Styling */
+/* Section Title */
 .blogs-section .section-title {
   font-size: 4.5rem;
   font-weight: 800;
@@ -34,19 +34,19 @@
   border-radius: 2px;
 }
 
-/* Grid layout */
+/* Grid */
 .blogs-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
-/* Individual blog card */
+/* Blog Card */
 .blog-card {
-  width: calc((100% - 4rem) / 3); /* 3 cards in a row with 2 gaps of 2rem */
+  width: calc((100% - 5rem) / 3); /* match project */
   max-width: 400px;
-  height: 360px;
+  height: 420px;
   background: white;
   border: 2px solid var(--sky);
   border-radius: 16px;
@@ -70,13 +70,15 @@
   object-fit: cover;
 }
 
-/* Text Content */
+/* Text */
 .blog-content {
   padding: 1.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 
 .blog-content h3 {
@@ -91,6 +93,7 @@
   color: #444;
 }
 
+/* Button */
 .toggle-button {
   margin-top: 2.5rem;
   padding: 1.5rem 3rem;
@@ -99,7 +102,6 @@
   border-radius: 12px;
   background-color: var(--sky);
   color: white;
-  text-decoration: none;
   border: 2px solid var(--sky);
   transition: all 0.2s ease;
   cursor: pointer;
@@ -111,25 +113,20 @@
   transform: scale(1.05);
 }
 
-
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 1200px) {
   .blog-card {
-    width: calc((100% - 2rem) / 2); /* 2 cards per row */
+    width: calc((100% - 2rem) / 2);
   }
+
   .blog-content h3 {
     font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--dark);
-    margin-bottom: 0.6rem;
-    }
+  }
 
-    .blog-content p {
+  .blog-content p {
     font-size: 1rem;
-    color: #444;
-    }
+  }
 }
-
 
 @media (max-width: 850px) {
   .blogs-section {
@@ -139,14 +136,29 @@
   .blog-card {
     width: 100%;
     height: auto;
+    min-height: 420px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .blog-image {
     height: 200px;
+    object-fit: cover;
+  }
+
+  .blog-content {
+    padding: 1.5rem 1.5rem 2.5rem; /* more space at bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
   }
 
   .blog-content h3 {
     font-size: 1.2rem;
+    margin-bottom: 0.6rem;
   }
 
   .blog-content p {
@@ -157,3 +169,4 @@
     font-size: 3.2rem;
   }
 }
+

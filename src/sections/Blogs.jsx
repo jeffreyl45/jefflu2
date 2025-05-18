@@ -6,8 +6,8 @@ const BASE = import.meta.env.BASE_URL;
 
 const blogs = [
   {
-    title: 'How I Built This Site',
-    description: 'A deep dive into the design and development of my portfolio site.',
+    title: 'Hello World 2.0!',
+    description: 'Welcome to my New Website!',
     image: `${BASE}icon.png`, 
     link: '/blogs/blog1'
   }
