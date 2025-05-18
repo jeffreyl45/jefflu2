@@ -16,7 +16,7 @@ body {
 
 /* anchor offset for sections to account for sticky navbar */
 .anchor-wrapper {
-  scroll-margin-top: 140px; 
+  scroll-margin-top: 200px; 
 }
 
 /* spacing for sections */
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media (max-width: 850px) {
   .anchor-wrapper {
-    scroll-margin-top: 330px;
+    scroll-margin-top: 450px;
   }
 
   main > div {

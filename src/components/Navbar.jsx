@@ -15,20 +15,31 @@ export default function Navbar() {
 
   const closeMenu = () => setIsOpen(false)
 
+  // ✨ Programmatic smooth scroll using element IDs
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id)
+    if (section) {
+      section.scrollIntoView({ behavior: 'auto' }) // or 'smooth' if you prefer
+    }
+    closeMenu()
+  }
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#about" className="logo-homeplate desktop-only">
+        <a className="logo-homeplate desktop-only" onClick={() => scrollToSection('about')}>
           <HomePlateLogo />
         </a>
 
         <ul className="navbar-links desktop-only">
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blogs">Blogs</a></li>
+          <li><a onClick={() => scrollToSection('about')}>About Me</a></li>
+          <li><a onClick={() => scrollToSection('projects')}>Projects</a></li>
+          <li><a onClick={() => scrollToSection('blogs')}>Blogs</a></li>
         </ul>
 
-        <a href="#contact" className="contact-button desktop-only">Contact Me</a>
+        <a className="contact-button desktop-only" onClick={() => scrollToSection('contact')}>
+          Contact Me
+        </a>
 
         <button
           className={`hamburger ${showHamburger ? 'hamburger-animate' : ''}`}
@@ -39,15 +50,15 @@ export default function Navbar() {
         </button>
 
         <div className={`menu mobile-only ${isOpen ? 'open' : ''}`}>
-          <a href="#about" className="logo-homeplate" onClick={closeMenu}>
+          <a className="logo-homeplate" onClick={() => scrollToSection('about')}>
             <HomePlateLogo />
           </a>
           <ul className="navbar-links">
-            <li><a href="#about" onClick={closeMenu}>About Me</a></li>
-            <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
-            <li><a href="#blogs" onClick={closeMenu}>Blogs</a></li>
+            <li><a onClick={() => scrollToSection('about')}>About Me</a></li>
+            <li><a onClick={() => scrollToSection('projects')}>Projects</a></li>
+            <li><a onClick={() => scrollToSection('blogs')}>Blogs</a></li>
           </ul>
-          <a href="#contact" className="contact-button" onClick={closeMenu}>
+          <a className="contact-button" onClick={() => scrollToSection('contact')}>
             Contact
           </a>
         </div>
