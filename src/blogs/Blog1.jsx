@@ -34,8 +34,8 @@ export default function Blog1() {
             front end development projects. I first deployed this project back in December 2023 with an HTML, CSS and JS stack. I definitely
             learned a lot about those tools while building that webpage, but as it continued to grow bigger and bigger with all of the new projects
             I wanted to post on it along with more blogs, it became somewhat messy and difficult to maintain. This motivated me to launch a completely 
-            new webpage that would be easier and cleaner to maintain and thus I decided to make it using <strong>React</strong> and <strong>Vite</strong>
-             for its fast build times and limited configuration hassles. 
+            new webpage that would be easier and cleaner to maintain and thus I decided to make it using <strong>React</strong> and <strong>Vite</strong> for 
+            its fast build times and limited configuration hassles. 
           </p>
           <p>
             Nonetheless, I hope you enjoy exploring my new website, learning more about me and checking in on what I've been working on!
