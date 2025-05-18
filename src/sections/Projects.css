@@ -44,7 +44,8 @@
 
 /* Individual project card */
 .project-card {
-  width: calc((100% - 5rem) / 3); /* 3 per row with two gaps (2.5rem) */
+/* 3 per row */
+  width: calc((100% - 5rem) / 3); 
   max-width: 400px;
   height: 460px;
   background: white;
@@ -113,7 +114,8 @@
 /* Responsive tweaks */
 @media (max-width: 1200px) {
   .project-card {
-    width: calc((100% - 2rem) / 2); /* 2 per row */
+    /* 2 per row */
+    width: calc((100% - 2rem) / 2); 
   }
 }
 
