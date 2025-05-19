@@ -55,8 +55,7 @@ export default function About() {
       <div className="about-text">
         <p>
           I'm a CS student and a current SWE intern at Scotiabank. I'm passionate about
-          Software Development, Machine Learning and making the world a better place one line of code
-          at a time 😁.
+          Software Development, Machine Learning and Data.
         </p>
         <div className="about-buttons">
           <a href="https://docs.google.com/document/d/1kTR1VcFTvhjtDSgaaszizKWorqkxX08jvwGrWrufyFk/edit?usp=sharing" className="btn" target="_blank" rel="noopener noreferrer">Resume</a>
