@@ -12,7 +12,7 @@ html {
   width: 100%;
   background-color: var(--light);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  padding: 0.5rem 0;
+  padding: 0rem 0;
   animation: navbarDropIn 0.6s ease-out forwards;
   position: sticky; 
   top: 0;
@@ -22,7 +22,7 @@ html {
 .navbar-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 3rem;
+  padding: 0rem 3rem;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -36,6 +36,7 @@ html {
   justify-content: center;
   cursor: pointer;
   transition: transform 0.2s ease;
+  width: 70%;
 }
 .logo-homeplate:hover {
   transform: scale(1.05);
@@ -138,7 +139,7 @@ html {
   }
 
   .navbar-container {
-    padding: 1rem 1.5rem;
+    padding: 0rem 1.5rem;
     column-gap: 1.5rem;
   }
 
