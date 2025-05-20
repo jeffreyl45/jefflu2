@@ -33,9 +33,11 @@ export default function Blogs() {
         ))}
       </div>
 
+{ /* 
       <button className="toggle-button" onClick={() => setExpanded(prev => !prev)}>
         {expanded ? 'See Less' : 'See More'}
       </button>
+*/ }
     </section>
   )
 }
