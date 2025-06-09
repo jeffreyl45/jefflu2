@@ -1,20 +1,22 @@
 import { useEffect } from 'react'
 import HomePlateLogo from '../components/HomePlateLogo'
 import './BlogPage.css'
+
 const BASE = import.meta.env.BASE_URL
 
 export default function Blog1() {
   // Scroll to top on mount
   useEffect(() => {
-  window.scrollTo(0, 0);
-  }, []);
-
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className="blog-wrapper">
-      <a href={BASE} className="logo-homeplate blog-logo-link">
-        <HomePlateLogo />
-      </a>
+      <div className="blog-logo-container">
+        <a href={BASE} className="blog-logo-link">
+          <HomePlateLogo />
+        </a>
+      </div>
 
       <main className="blog-content">
         <h1 className="blog-title">Hello World 2.0!</h1>
