@@ -60,16 +60,16 @@
 
 /* Blog header image */
 .blog-header-image {
-  width: 50%;
+  width: 60%;
   max-width: 800px;
   height: auto;
   border-radius: 12px;
   margin-bottom: 2rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: width 0.8s ease;
-}
-.blog-header-image:hover {
-  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Article styling */
@@ -86,7 +86,7 @@
     transform: scale(0.8);
   }
   .blog-article p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 2;
     margin-bottom: 1.5rem;
     text-align: left;
@@ -98,4 +98,5 @@
   .blog-logo-link:hover {
     transform: scale(0.8);
   }
+
 }
