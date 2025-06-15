@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Projects.css'; // ✅ Reuse exact same styles as Projects
+import './Cards.css';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -11,7 +11,6 @@ const blogs = [
     image: `${BASE}icon.png`,
     link: '/blogs/blog1',
   }
-  // Add more blogs as needed
 ];
 
 export default function Blogs() {

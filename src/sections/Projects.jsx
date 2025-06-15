@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Projects.css'
+import './Cards.css'
 const BASE = import.meta.env.BASE_URL;
 
 const projects = [
