@@ -6,7 +6,7 @@ export default function Contact() {
     <section className="contact-section">
       <h2 className="contact-title">Contact Me</h2>
       <p className="contact-message">
-        Feel free to connect with me via Email or LinkedIn! I'm always open to chatting about opportunities and collaborations!
+        Feel free to connect with me via Email or LinkedIn or check out what I'm working on from my Github page! I'm always open to chatting about opportunities and collaborations!
       </p>
       <div className="contact-icons">
         <a href="mailto:jefflu288@gmail.com" className="contact-icon" aria-label="Email">
