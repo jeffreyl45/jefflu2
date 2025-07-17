@@ -17,7 +17,7 @@ export default function About() {
       title: 'Scotiabank',
       role: 'Software Engineer',
       date: 'May 2025 – Present',
-      description: 'Developing Monitoring Tools on Dynatrace and Splunk 🛠️.'
+      description: 'Deployed and Configured Terraform Modules on Dynatrace to Monitor SSL Certificates. Developed Splunk dashboards and queries to monitor CPU and License Usage.'
     },
     {
       title: 'Toronto Transit Commission',
