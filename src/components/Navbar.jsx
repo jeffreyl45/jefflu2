@@ -14,12 +14,10 @@ export default function Navbar() {
   }, [])
 
   const closeMenu = () => setIsOpen(false)
-
-  // ✨ Programmatic smooth scroll using element IDs
   const scrollToSection = (id) => {
     const section = document.getElementById(id)
     if (section) {
-      section.scrollIntoView({ behavior: 'auto' }) // or 'smooth' if you prefer
+      section.scrollIntoView({ behavior: 'auto' }) 
     }
     closeMenu()
   }
