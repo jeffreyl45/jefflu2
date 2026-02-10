@@ -15,9 +15,15 @@ export default function About() {
 
   const experience = [
     {
+      title: 'TELUS',
+      role: 'Software Engineer',
+      date: 'Jan 2026 – Present',
+      description: 'Building the AI Factory Team Platform.'
+    },
+    {
       title: 'Scotiabank',
       role: 'Software Engineer',
-      date: 'May 2025 – Present',
+      date: 'May 2025 – Dec 2025',
       description: 'Deployed and Configured Terraform Modules on Dynatrace to Monitor SSL Certificates. Developed Splunk dashboards and queries to monitor CPU and License Usage.'
     },
     {
@@ -55,7 +61,7 @@ export default function About() {
 
       <div className="about-text">
         <p>
-          I'm a CS student and a current SWE intern at Scotiabank. I'm passionate about
+          I'm a CS student and a current SWE intern at TELUS. I'm passionate about
           Software Development, Machine Learning and Data.
         </p>
         <div className="about-buttons">
