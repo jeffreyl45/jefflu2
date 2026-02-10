@@ -8,6 +8,7 @@ export default function About() {
   const handleCardClick = (type, index) => {
     setFlippedCards(prev => ({
       ...prev,
+      // exp-1, exp-2, education-1 etc.
       [`${type}-${index}`]: !prev[`${type}-${index}`]
     }))
   }
