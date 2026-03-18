@@ -6,11 +6,6 @@ export default function Hero() {
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center px-6 lg:px-[15%]">
       <div className="relative z-10 text-center max-w-7xl mx-auto w-full">
-        <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-cyan-glow/20 bg-cyan-glow/5 text-cyan-glow text-lg mb-8 animate-fade-in-up">
-          <span className="w-2 h-2 rounded-full bg-cyan-glow animate-pulse" />
-          Software Engineer at TELUS
-        </div>
-
         <div className="flex justify-center mb-6 animate-fade-in-up">
           <img
             src={`${BASE}jeffrey.jpeg`}
@@ -32,7 +27,7 @@ export default function Hero() {
 
         <p className="text-xl text-gray-500 max-w-4xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           I'm a Final Year CS student at McMaster University passionate about building scalable
-          software and exploring Machine Learning & AI.
+          software and exploring Machine Learning & AI. Current SWE Intern at TELUS.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
