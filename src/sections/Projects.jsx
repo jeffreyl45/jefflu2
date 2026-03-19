@@ -78,7 +78,7 @@ export default function Projects() {
     <section className="relative z-10 min-h-screen flex flex-col justify-center py-32 px-6 lg:px-[15%]">
       <div className="w-full">
         <div className="animate-fade-in">
-          <SectionHeading title="Projects" subtitle="Things I've built and experimented with" />
+          <SectionHeading title="Projects" subtitle="Interesting Things I've Built." />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in" style={{ animationDelay: '0.15s' }}>
