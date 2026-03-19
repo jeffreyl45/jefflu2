@@ -39,7 +39,7 @@ export default function Navbar() {
           to="/"
           className="hover:opacity-80 transition-opacity"
         >
-          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="JL" className="h-20 w-20" />
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="JL" className="h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20" />
         </Link>
 
         <div className="hidden lg:flex items-center gap-10">
