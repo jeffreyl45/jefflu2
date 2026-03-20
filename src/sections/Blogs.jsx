@@ -21,7 +21,7 @@ export default function Blogs() {
     <section className="relative z-10 min-h-screen flex flex-col pt-32 pb-16 px-6 lg:px-[15%]">
       <div className="w-full">
         <div className="animate-fade-in">
-          <SectionHeading title="Blog" subtitle="My Thoughts and Experiences." />
+          <SectionHeading title="Blog" subtitle="My Life between the Lines of Code." />
         </div>
 
         <div className="flex flex-wrap justify-center gap-6 animate-fade-in" style={{ animationDelay: '0.15s' }}>
