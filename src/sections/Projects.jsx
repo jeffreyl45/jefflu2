@@ -13,6 +13,13 @@ const projects = [
     tags: ['React', 'Vite', 'Tailwind'],
   },
   {
+    title: 'Goulding Park Slopitch Website',
+    description: 'Slopitch Website for Goulding Park Slopitch League.',
+    image: `${BASE}gouldingLogo.png`,
+    link: 'https://goulding-slopitch-website.vercel.app',
+    tags: ['React', 'Vite', 'Tailwind', 'Next.js', 'Supabase'],
+  },
+  {
     title: 'Old Personal Portfolio Website',
     description: 'My old personal portfolio website made using HTML, CSS, and JS.',
     image: `${BASE}personalPortfolio.png`,
