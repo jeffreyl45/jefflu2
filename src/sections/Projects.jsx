@@ -14,9 +14,9 @@ const projects = [
   },
   {
     title: 'Goulding Park Slopitch Website',
-    description: 'Website to schedule games and keep track of player stats for Goulding Park Slopitch League.',
+    description: 'Website for the Goulding Park Slopitch League.',
     image: `${BASE}gouldingLogo.png`,
-    link: 'https://goulding-slopitch-website.vercel.app',
+    link: 'https://gouldingparkslopitch.com',
     tags: ['React', 'Vite', 'Tailwind', 'Next.js', 'Supabase'],
   },
   {
