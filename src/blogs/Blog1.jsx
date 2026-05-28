@@ -15,11 +15,11 @@ export default function Blog1() {
       <header className="sticky top-0 z-50 bg-dark-900/80 backdrop-blur-md border-b border-white/5">
         <div className="max-w-4xl mx-auto px-6 h-16 flex items-center">
           <Link
-            to="/"
+            to="/blogs"
             className="flex items-center gap-2 text-gray-400 hover:text-cyan-glow text-lg transition-colors duration-300"
           >
             <FiArrowLeft />
-            Back to Home
+            Back
           </Link>
         </div>
       </header>
