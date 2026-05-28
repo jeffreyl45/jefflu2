@@ -19,7 +19,7 @@ export default function Blog1() {
             className="flex items-center gap-2 text-gray-400 hover:text-cyan-glow text-lg transition-colors duration-300"
           >
             <FiArrowLeft />
-            Back to Blogs
+            Back
           </Link>
         </div>
       </header>
