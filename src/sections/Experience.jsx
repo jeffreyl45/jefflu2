@@ -5,7 +5,7 @@ const experience = [
     title: 'Software Engineer',
     company: 'TELUS',
     period: 'Jan 2026 – Present',
-    description: 'Building the AI Factory Team Platform.',
+    description: 'Built dashboards to unlock client GPU usage visibility and designed reusable branded components for the Sovereign AI Factory Self-Serve.',
     tech: ['Python', 'Typescript', 'AI/ML', 'Cloud'],
     current: true,
   },
