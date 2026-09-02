@@ -2,12 +2,19 @@ import SectionHeading from '../components/SectionHeading'
 
 const experience = [
   {
+    title: 'Freelance Software Engineer',
+    company: 'Self-Employed',
+    period: 'Aug 2026 – Present',
+    description: 'Helping clients set up websites including Shopify storefronts.',
+    tech: ['Liquid', 'HTML', 'Shopify'],
+    current: true,
+  },
+  {
     title: 'Software Engineer',
     company: 'TELUS',
-    period: 'Jan 2026 – Present',
+    period: 'Jan 2026 – Aug 2026',
     description: 'Built dashboards to unlock client GPU usage visibility and designed reusable branded components for the Sovereign AI Factory Self-Serve.',
     tech: ['Python', 'Typescript', 'AI/ML', 'Cloud'],
-    current: true,
   },
   {
     title: 'Software Engineer',

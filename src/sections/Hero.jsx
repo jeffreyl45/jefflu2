@@ -27,7 +27,7 @@ export default function Hero() {
 
         <p className="text-xl text-gray-500 max-w-4xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           I'm a Final Year CS student at McMaster University passionate about building scalable
-          software and exploring Machine Learning & AI.
+          software and exploring Machine Learning & AI. I do freelance software work on the side, feel free to <a href="mailto:jefflu288@gmail.com">contact me</a>!
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
