@@ -38,7 +38,7 @@ export default function Hero() {
             View My Work
           </Link>
           <a
-            href="https://docs.google.com/document/d/1kTR1VcFTvhjtDSgaaszizKWorqkxX08jvwGrWrufyFk/edit?usp=sharing"
+            href={`${BASE}Jeffrey_Lu_Resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 rounded-full border border-gray-600 text-gray-300 hover:border-cyan-glow/50 hover:text-cyan-glow transition-all duration-300"

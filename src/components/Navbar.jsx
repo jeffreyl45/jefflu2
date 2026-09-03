@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 
+const BASE = import.meta.env.BASE_URL
+
 const links = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
@@ -60,7 +62,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://docs.google.com/document/d/1kTR1VcFTvhjtDSgaaszizKWorqkxX08jvwGrWrufyFk/edit?usp=sharing"
+            href={`${BASE}Jeffrey_Lu_Resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2.5 rounded-full text-base font-medium border border-cyan-glow/30 text-cyan-glow hover:bg-cyan-glow/10 transition-all duration-300"
