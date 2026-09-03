@@ -4,7 +4,7 @@ import SectionHeading from '../components/SectionHeading'
 const contactInfo = [
   { icon: <FaEnvelope />, label: 'Email', value: 'jefflu288@gmail.com', href: 'mailto:jefflu288@gmail.com' },
   { icon: <FaGithub />, label: 'GitHub', value: 'jeffreyl45', href: 'https://github.com/jeffreyl45', external: true },
-  { icon: <FaLinkedin />, label: 'LinkedIn', value: 'Jeffrey Lu', href: 'https://linkedin.com/in/jeffrey-lu-2b5367204', external: true },
+  { icon: <FaLinkedin />, label: 'LinkedIn', value: 'Jeffrey Lu', href: 'https://linkedin.com/in/jeffreylu45', external: true },
 ]
 
 export default function Contact() {
