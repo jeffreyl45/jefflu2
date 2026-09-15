@@ -60,7 +60,12 @@ export default function Blog2() {
                 LinkedIn post
               </a>{' '}
               about this a while back, framing it mostly as a door into freelance work. But it taught me something bigger and more personal, 
-              a shift in how I think about every personal project I start from now on.
+              a shift in how I think about every personal project I start from now on. You can check out the project <a
+                href="https://gouldingparkslopitch.com/"
+                className="text-cyan-glow hover:text-purple-glow underline underline-offset-2 transition-colors duration-300"
+              >here</a>.
+
+              
             </p>
             <p>
               For years, I built personal projects to learn frameworks and languages, following tutorials or courses.
