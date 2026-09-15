@@ -10,6 +10,7 @@ import Projects from './sections/Projects'
 import Blogs from './sections/Blogs'
 import Contact from './sections/Contact'
 import Blog1 from './blogs/Blog1'
+import Blog2 from './blogs/Blog2'
 
 function Layout() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Route>
         <Route path="/blogs/blog1" element={<Blog1 />} />
+        <Route path="/blogs/blog2" element={<Blog2 />} />
       </Routes>
     </>
   )

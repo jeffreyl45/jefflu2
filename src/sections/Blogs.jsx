@@ -5,12 +5,19 @@ import SectionHeading from '../components/SectionHeading'
 
 const blogs = [
   {
+    title: 'How big a deal is it to set up our own website?',
+    description: 'The project that changed why I build',
+    date: 'September 2026',
+    readTime: '5 min read',
+    link: '/blogs/blog2',
+  },
+  {
     title: 'Hello World 2.0!',
     description: 'Welcome to my new website!',
     date: 'May 2025',
     readTime: '5 min read',
     link: '/blogs/blog1',
-  },
+  }
 ]
 
 export default function Blogs() {
