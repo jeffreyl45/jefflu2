@@ -3,14 +3,11 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 border-t border-white/5 py-6 px-6 lg:px-[15%]">
-      <div className="flex flex-col items-center gap-4 md:grid md:grid-cols-3 md:items-center">
-        <Link
-          to="/"
-          className="hover:opacity-80 transition-opacity md:justify-self-start"
-        >
-          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="JL" className="h-16 w-16 md:h-20 md:w-20" />
-        </Link>
+    <footer className="relative z-10 border-t border-white/5 pt-10 pb-4 px-6 lg:px-[15%]">
+      <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
+        <p className="text-sm md:text-base text-gray-600">
+          &copy; {new Date().getFullYear()} Jeffrey Lu
+        </p>
 
         <div className="flex items-center justify-center gap-8">
           {[
@@ -30,10 +27,6 @@ export default function Footer() {
             </a>
           ))}
         </div>
-
-        <p className="text-sm md:text-base text-gray-600 md:justify-self-end">
-          &copy; {new Date().getFullYear()} Jeffrey Lu
-        </p>
       </div>
     </footer>
   );
