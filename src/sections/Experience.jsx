@@ -4,10 +4,9 @@ const experience = [
   {
     title: 'Freelance Software Engineer',
     company: 'Self-Employed',
-    period: 'Aug 2026 – Present',
+    period: 'July 2026 – Aug 2026',
     description: 'Helping clients set up websites including Shopify storefronts.',
     tech: ['Liquid', 'HTML', 'Shopify'],
-    current: true,
   },
   {
     title: 'Software Engineer',
